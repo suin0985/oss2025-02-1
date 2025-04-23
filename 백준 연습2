@@ -1,0 +1,260 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/suin0985/oss2025-02-1/blob/main/%EB%B0%B1%EC%A4%80%20%EC%97%B0%EC%8A%B52\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 시험 기간 공부 계획"
+      ],
+      "metadata": {
+        "id": "RYj676yxBnD7"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "* oss개발 개념 정리 및 코드 정리\n",
+        "* 병리학 1회독 마무리\n",
+        "* 병리학 개념 외우기!"
+      ],
+      "metadata": {
+        "id": "2Gdjs1LABxN4"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# 백준을 이용한 코딩 공부!\n",
+        "## '두 수 비교하기'\n",
+        "### 문제 : 두 정수 A와 B가 주어졌을 때, A와 B를 비교하는 프로그램을 작성하시오."
+      ],
+      "metadata": {
+        "id": "AmOg6AIgCDMh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A, B = map(int, input(\"두 정수를 입력하세요 (예: 3 5): \").split())\n",
+        "\n",
+        "# 비교 결과 출력\n",
+        "if A > B:\n",
+        "    print(\">\")\n",
+        "elif A < B:\n",
+        "    print(\"<\")\n",
+        "else:\n",
+        "    print(\"==\")"
+      ],
+      "metadata": {
+        "id": "YXkJ1U8vEua6",
+        "outputId": "9a42d9aa-47be-4676-9fa9-318fb7a791a5",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "두 정수를 입력하세요 (예: 3 5): 3 6\n",
+            "<\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## '시험 성적'\n",
+        "### 문제 : 시험 점수를 입력받아 90 ~ 100점은 A, 80 ~ 89점은 B, 70 ~ 79점은 C, 60 ~ 69점은 D, 나머지 점수는 F를 출력하는 프로그램을 작성하시오."
+      ],
+      "metadata": {
+        "id": "7KAkw7YbFdpu"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "score = int(input(\"시험 점수를 입력하세요 (0~100): \"))\n",
+        "\n",
+        "# 학점 판별\n",
+        "if 90 <= score <= 100:\n",
+        "    print(\"A\")\n",
+        "elif 80 <= score <= 89:\n",
+        "    print(\"B\")\n",
+        "elif 70 <= score <= 79:\n",
+        "    print(\"C\")\n",
+        "elif 60 <= score <= 69:\n",
+        "    print(\"D\")\n",
+        "else:\n",
+        "    print(\"F\")"
+      ],
+      "metadata": {
+        "id": "NoVKWOinF2ol",
+        "outputId": "c8d69158-9340-4023-e096-5d265e71d20c",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "시험 점수를 입력하세요 (0~100): 98\n",
+            "A\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# A + B -8"
+      ],
+      "metadata": {
+        "id": "qlVy82SDGwrh"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 문제 : 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오"
+      ],
+      "metadata": {
+        "id": "CQIynhPmG2Zb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "T = int(input(\"테스트 케이스 개수를 입력하세요: \"))"
+      ],
+      "metadata": {
+        "id": "MgTrOVe8G_47",
+        "outputId": "cf0a94b7-9734-444f-8c4f-988886e409d0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "테스트 케이스 개수를 입력하세요: 3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(T):\n",
+        "    A, B = map(int, input(f\"{i+1}번째 테스트 케이스 (A B): \").split())\n",
+        "    print(A+B)"
+      ],
+      "metadata": {
+        "id": "cpNCZzYuHNiA",
+        "outputId": "aaf7eeef-8678-4489-de4d-b068ef73d710",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1번째 테스트 케이스 (A B): 4 5\n",
+            "9\n",
+            "2번째 테스트 케이스 (A B): 7 8\n",
+            "15\n",
+            "3번째 테스트 케이스 (A B): 1 2\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "1WP9UX_eHbVf"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "akPbeJosHdLX"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "3HZYe05GHfH1"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "gGzu6fYvHhN5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "abZbd8UcG0Ks"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Pq6an-pNGGvq"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
