@@ -1,0 +1,709 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/suin0985/oss2025-02-1/blob/main/%EC%B4%88%EB%B3%B4%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%ED%8C%8C%EC%9D%B4%EC%8D%AC%20300%EC%A0%9C%20(11~20)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 파이썬 연습하기 11~20\n",
+        "### 11. 변수 사용하기\n",
+        "#### 삼성전자라는 변수로 50,000원을 바인딩해보세요. 삼성전자 주식 10주를 보유하고 있을 때 총 평가금액을 출력하세요."
+      ],
+      "metadata": {
+        "id": "Wil--ugtC5oq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "삼성전자 = 50000"
+      ],
+      "metadata": {
+        "id": "bSdG7XCaDGRt"
+      },
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "총평가금액 = 삼성전자 * 10"
+      ],
+      "metadata": {
+        "id": "9x8fPm7BDKn_"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(총평가금액)"
+      ],
+      "metadata": {
+        "id": "-i_CF_uVDO_G",
+        "outputId": "636b337a-f9c4-45c7-89ed-96e511c7689b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "500000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 12. 변수 사용하기\n",
+        "#### 변수를 사용해서 시가총액, 현재가, PER 등을 바인딩해보세요.\n",
+        "#### 시가 총액 : 293조\n",
+        "#### 현재가 : 50,000원\n",
+        "#### PER : 15.79"
+      ],
+      "metadata": {
+        "id": "Rj7P7Mi1DS76"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "시가총액 = 298000000000000"
+      ],
+      "metadata": {
+        "id": "uHY23ubsDw0C"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "현재가 = 50000"
+      ],
+      "metadata": {
+        "id": "JjGM-gp6D1a0"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "PER = 15.79"
+      ],
+      "metadata": {
+        "id": "XxpcuOXFD2xc"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(시가총액, type(시가총액))"
+      ],
+      "metadata": {
+        "id": "fe3PNBQLD5Zk",
+        "outputId": "25f15893-f7a9-4040-94f9-fe93075efb98",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "298000000000000 <class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(현재가, type(현재가))"
+      ],
+      "metadata": {
+        "id": "yJzxUwm6D9VV",
+        "outputId": "820088fc-3581-49ed-b724-38d4443e8a70",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "50000 <class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(PER,type(PER))"
+      ],
+      "metadata": {
+        "id": "z_8k8HzJEBbP",
+        "outputId": "3a61527f-33ec-4269-8723-37e24f925287",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "15.79 <class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 13. 문자열 출력\n",
+        "#### 변수 s와 t에는 각각 문자열이 바인딩 되어있습니다."
+      ],
+      "metadata": {
+        "id": "ycqJZVzaEF2F"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s = \"hello\""
+      ],
+      "metadata": {
+        "id": "IDrx21L-EQmF"
+      },
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "t = \"python\""
+      ],
+      "metadata": {
+        "id": "8UiSjEYmEX7g"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 두 변수를 이용하여 아래와 같이 출력해보세요.\n",
+        "##### 실행 예 : hello! python"
+      ],
+      "metadata": {
+        "id": "jCQBiGEMEa8d"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s = \"hello\""
+      ],
+      "metadata": {
+        "id": "YWrSHxXLEjOo"
+      },
+      "execution_count": 13,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "t = \"python\""
+      ],
+      "metadata": {
+        "id": "XDBBssgSEmc_"
+      },
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(s+\"!\", t)"
+      ],
+      "metadata": {
+        "id": "PgwmiQqOEogM",
+        "outputId": "636dff18-46eb-48b2-8e80-62bc825ca832",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello! python\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 14. 파이썬을 이용한 값 계산\n",
+        "#### 아래 코드의 실행 결과를 예상해보세요."
+      ],
+      "metadata": {
+        "id": "UDvqtUGeEtpd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "2 + 2 * 3"
+      ],
+      "metadata": {
+        "id": "rEC2YQiKE1_T",
+        "outputId": "bcdcb3af-d419-46eb-f8f8-13238d3cfced",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "8"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 15. type 함수\n",
+        "#### type() 함수는 데이터 타입을 판별합니다. 변수 a에는  128 숫자가 바인딩돼 있어 type 함수가 int(정수)형임을 알려줍니다."
+      ],
+      "metadata": {
+        "id": "U060aIqFE7Ci"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 128"
+      ],
+      "metadata": {
+        "id": "Bi7_6JZ9FJ3Y"
+      },
+      "execution_count": 17,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(a))"
+      ],
+      "metadata": {
+        "id": "XT51pwjHFNrO",
+        "outputId": "53a6369b-422f-44e2-bc93-566fa7b3edb1",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 132"
+      ],
+      "metadata": {
+        "id": "fUdx77OkFSUI"
+      },
+      "execution_count": 20,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(a))"
+      ],
+      "metadata": {
+        "id": "50B6qJnPFWPr",
+        "outputId": "e6cfe24a-00d1-46ba-ffad-e021dad57e22",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 16. 문자열을 정수로 변환\n",
+        "#### 문자열 '720'를 정수형으로 변환해보세요."
+      ],
+      "metadata": {
+        "id": "RbJLCGweFapY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num_str = \"720\""
+      ],
+      "metadata": {
+        "id": "6FCbABfXFgvF"
+      },
+      "execution_count": 22,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num_int = int(num_str)"
+      ],
+      "metadata": {
+        "id": "27mdZLMUFlCC"
+      },
+      "execution_count": 23,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(num_int+1, type(num_int))"
+      ],
+      "metadata": {
+        "id": "_Eqv38UQFoLA",
+        "outputId": "00ced54d-f899-46f0-edc9-cf06821dcf90",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "721 <class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 17. 정수를 문자열 100으로 변환\n",
+        "#### 정수 100을 문자열 '100'으로 변환해보세요."
+      ],
+      "metadata": {
+        "id": "ewLPK7WoFxar"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = 100"
+      ],
+      "metadata": {
+        "id": "zUjm4IE3F3oV"
+      },
+      "execution_count": 25,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result = str(num)"
+      ],
+      "metadata": {
+        "id": "j8591SZiF6A8"
+      },
+      "execution_count": 26,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(result, type(result))"
+      ],
+      "metadata": {
+        "id": "nvDo3ISZF7_K",
+        "outputId": "a850be5f-b996-4da9-9a4b-d1ef96354543",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "100 <class 'str'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 18. 문자열을 실수로 변환\n",
+        "#### 문자열 \"15.79\"를 실수(float) 타입으로 변환해보세요."
+      ],
+      "metadata": {
+        "id": "FgV7hG-bF_5_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "data = \"15.79\""
+      ],
+      "metadata": {
+        "id": "H6GwFsXJGHDb"
+      },
+      "execution_count": 30,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "data = float(data)"
+      ],
+      "metadata": {
+        "id": "76KypxfDGJsk"
+      },
+      "execution_count": 31,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(data, type(data))"
+      ],
+      "metadata": {
+        "id": "i8UWao1JGMks",
+        "outputId": "c359a416-85d0-430a-c172-86316f17762a",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "15.79 <class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 19. 문자열을 정수로 변환\n",
+        "#### year라는 변수가 문자열 타입의 연도를 바인딩하고 있습니다. 이를 정수로 변환한 후 최근 3년의 연도를 화면에 출력해보세요."
+      ],
+      "metadata": {
+        "id": "iNNUTec9GU4O"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "year = \"2025\""
+      ],
+      "metadata": {
+        "id": "X87ke0N7GfXs"
+      },
+      "execution_count": 33,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(int(year)-3)"
+      ],
+      "metadata": {
+        "id": "4GvnYu1xGkln",
+        "outputId": "c1d89c33-584f-4838-9360-85859a81542e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2022\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(int(year)-2)"
+      ],
+      "metadata": {
+        "id": "_IkQ8nw7Gopg",
+        "outputId": "790a2378-e944-4e98-d060-95c4c6fad31e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2023\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(int(year)-1)"
+      ],
+      "metadata": {
+        "id": "mBmciO6rGr6F",
+        "outputId": "4f0dee50-864e-4a6c-e3dc-70b0040f62c0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2024\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### 20. 파이썬 계산\n",
+        "#### 에어컨이 월 48,584원에 무이자 36개월의 조건으로 홈쇼핑에서 판매되고 있습니다. 총 금액은 계산한 후 이를 화면에 출력해보세요. (변수사용하기)"
+      ],
+      "metadata": {
+        "id": "OZkQ-3ShGzLE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "월 = 48584"
+      ],
+      "metadata": {
+        "id": "RGh4csX0G-MD"
+      },
+      "execution_count": 37,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "총금액 = 월 * 36"
+      ],
+      "metadata": {
+        "id": "AV-HuREQHA7j"
+      },
+      "execution_count": 38,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(총금액)"
+      ],
+      "metadata": {
+        "id": "rW1jfwomHCga",
+        "outputId": "b284c623-036a-4b16-c66f-b69d06367c4f",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1749024\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Colab 시작하기",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
